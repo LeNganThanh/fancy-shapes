@@ -1,8 +1,46 @@
-html, body {
-    padding: 0;
-    margin: 0;
+:root {
+  font-size: 62.5%;
 }
-
-section {
-    margin-top: 10px;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 1rem;
+}
+.task-one {
+  margin-top: 10px;
+}
+p {
+  background-color: rgb(194, 251, 253);
+}
+p::before,
+p::after {
+  color: beige;
+  background-color: blue;
+  font-weight: bold;
+}
+p::before {
+  content: "Once upon a time... ";
+}
+p::after {
+  content: " The end";
+}
+.task-two {
+  width: 30rem;
+  height: 17rem;
+  background-image: url(assets/beach.jpg);
+  background-size: cover;
+  clip-path: polygon(50% 0, 90% 50%, 50% 100%, 10% 50%);
+}
+.task-three {
+  transform: rotate(180deg);
+  width: 25rem;
+}
+.task-three img {
+  width: 20rem;
 }
